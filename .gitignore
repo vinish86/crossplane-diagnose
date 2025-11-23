@@ -1,0 +1,12 @@
+# Binaries
+crossplane-diagnose
+
+# Mac
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Go
+go.sum
