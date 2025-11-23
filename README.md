@@ -58,6 +58,14 @@ Diagnose all `XPostgreSQLInstance` resources:
 ./crossplane-diagnose --kind XPostgreSQLInstance --output table
 ```
 
+### Ignore Specific Kinds
+Some resources (like `Usage` or `EnvironmentConfig`) might not report status correctly or are irrelevant for health checks.
+By default, the tool treats `Usage` and `EnvironmentConfig` as "Available".
+You can override this list:
+```bash
+./crossplane-diagnose --ignore-kinds Usage,EnvironmentConfig,MyCustomKind
+```
+
 ### Filter by Resource Name
 Diagnose a specific resource tree:
 ```bash
