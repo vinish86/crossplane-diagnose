@@ -44,6 +44,14 @@ Pipe the failure summary to Claude for expert debugging advice:
 ```
 *(Requires `claude` CLI to be installed and authenticated)*
 
+### Custom AI Prompt
+You can provide your own system prompt to tailor the AI's analysis.
+See `examples/prompt.txt` for a template.
+
+```bash
+./crossplane-diagnose --ai-analysis --ai-prompt-file examples/prompt.txt
+```
+
 ### Filter by Resource Kind
 Diagnose all `XPostgreSQLInstance` resources:
 ```bash
